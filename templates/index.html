@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        background-color: darkslategrey;
+    }
+
+    h1 {
+        color: skyblue;
+    }
+
+</style>
+</head>
+
+<!--##NO predefine-->
+<body>
+    <h1>Advance Calculator</h1><br>
+    <img height="300" width="300" src="img.png">
+    <form method="POST">
+        <label> Enter Expression</label><br><br>
+         <select name="operation" id="operation">
+            <option>Choose Operaion</option>
+            <option value="simplify">Simplify</option>
+            <option value="factor">Factor</option>
+        </select> 
+        <input placeholder="Expression" name="text">
+        <input type="submit"> 
+    </form>
+    <p>Your equation is {{equation}} = {{result}}</p>
+
+</body>
+</html>
